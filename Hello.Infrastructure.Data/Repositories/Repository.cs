@@ -1,4 +1,6 @@
 ﻿using Hello.Domain.Repositories;
+using Hello.Infrastructure.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,45 +8,51 @@ using System.Text;
 
 namespace Hello.Infrastructure.Data.Repositories
 {
-    /// <summary>
-    /// 泛型仓储
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
     public class Repository<T> : IRepository<T> where T : class
     {
-        public void Add(T obj)
+        protected readonly StudyContext Db;
+        protected readonly DbSet<T> DbSet;
+
+        public Repository(StudyContext context)
         {
-            throw new NotImplementedException();
+            Db = context;
+            DbSet = Db.Set<T>();
         }
 
-        public void Dispose()
+        public virtual void Add(T obj)
         {
-            throw new NotImplementedException();
+            DbSet.Add(obj);
         }
 
-        public IQueryable<T> GetAll()
+        public virtual T GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return DbSet.Find(id);
         }
 
-        public T GetById(Guid id)
+        public virtual IQueryable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return DbSet;
         }
 
-        public void Remove(Guid id)
+        public virtual void Update(T obj)
         {
-            throw new NotImplementedException();
+            DbSet.Update(obj);
+        }
+
+        public virtual void Remove(Guid id)
+        {
+            DbSet.Remove(DbSet.Find(id));
         }
 
         public int SaveChanges()
         {
-            throw new NotImplementedException();
+            return Db.SaveChanges();
         }
 
-        public void Update(T obj)
+        public void Dispose()
         {
-            throw new NotImplementedException();
+            Db.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }
