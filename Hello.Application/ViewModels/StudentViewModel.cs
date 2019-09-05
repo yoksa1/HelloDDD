@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Hello.Application.ViewModels
 {
-    public class CustomerViewModel
+    public class StudentViewModel
     {
         [Key]
         public Guid Id { get; set; }

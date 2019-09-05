@@ -14,7 +14,7 @@ namespace Hello.Infrastructure.Data.Repositories
         {
         }
 
-        public Customer GetByEmail(string email)
+        public Student GetByEmail(string email)
         {
             throw new System.NotImplementedException();
         }

@@ -7,6 +7,6 @@ namespace Hello.Domain.Repositories
 {
     public interface IStudentRepository : IRepository<Student>
     {
-        Customer GetByEmail(string email);
+        Student GetByEmail(string email);
     }
 }

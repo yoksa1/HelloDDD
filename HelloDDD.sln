@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.Domain", "Hello.Domain\Hello.Domain.csproj", "{770F2B7A-D9E4-4862-8E6E-BDF398B5B7A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Domain", "Hello.Domain\Hello.Domain.csproj", "{770F2B7A-D9E4-4862-8E6E-BDF398B5B7A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Document", "1-Document", "{D07D6ECA-30E8-4FEA-BF51-B2F62E8B8CBF}"
 EndProject
@@ -13,13 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{173187
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{583D40FC-75BE-4CB6-9A35-EE7470FA6917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.Infrastructure.Data", "Hello.Infrastructure.Data\Hello.Infrastructure.Data.csproj", "{9DC41F49-D787-4D72-B683-3C69D466A423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Infrastructure.Data", "Hello.Infrastructure.Data\Hello.Infrastructure.Data.csproj", "{9DC41F49-D787-4D72-B683-3C69D466A423}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{188CFA44-1FB9-4AC2-8C32-433D2BF189CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.Application", "Hello.Application\Hello.Application.csproj", "{06F4D7D5-3410-43B7-A5A8-6332E78DBC32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Application", "Hello.Application\Hello.Application.csproj", "{06F4D7D5-3410-43B7-A5A8-6332E78DBC32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.Domain.Test", "Hello.Domain.Test\Hello.Domain.Test.csproj", "{06C156AD-E5C7-4F16-9CA7-A695EE50397F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Domain.Test", "Hello.Domain.Test\Hello.Domain.Test.csproj", "{06C156AD-E5C7-4F16-9CA7-A695EE50397F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.Domain.Core", "Hello.Domain.Core\Hello.Domain.Core.csproj", "{A665F51C-7B9D-47E4-B472-D8C4D663B26B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{06C156AD-E5C7-4F16-9CA7-A695EE50397F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06C156AD-E5C7-4F16-9CA7-A695EE50397F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06C156AD-E5C7-4F16-9CA7-A695EE50397F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A665F51C-7B9D-47E4-B472-D8C4D663B26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A665F51C-7B9D-47E4-B472-D8C4D663B26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A665F51C-7B9D-47E4-B472-D8C4D663B26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A665F51C-7B9D-47E4-B472-D8C4D663B26B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{188CFA44-1FB9-4AC2-8C32-433D2BF189CF} = {0B61B99A-1168-46C9-9735-47A5CBBDF919}
 		{06F4D7D5-3410-43B7-A5A8-6332E78DBC32} = {188CFA44-1FB9-4AC2-8C32-433D2BF189CF}
 		{06C156AD-E5C7-4F16-9CA7-A695EE50397F} = {17318777-BA73-41C1-806B-C02A8C6D0820}
+		{A665F51C-7B9D-47E4-B472-D8C4D663B26B} = {17318777-BA73-41C1-806B-C02A8C6D0820}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D464AB0A-9120-4784-B063-6176B6D4B38A}
