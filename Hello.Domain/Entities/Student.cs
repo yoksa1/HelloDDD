@@ -1,4 +1,5 @@
 ﻿using Hello.Domain.Core.Models;
+using Hello.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -32,8 +33,11 @@ namespace Hello.Domain.Entities
         /// 生日
         /// </summary>
         public DateTime BirthDate { get; private set; }
-        
 
+        /// <summary>
+        /// 地址外键
+        /// </summary>
+        public Address Address { get; private set; }
 
     }
 }

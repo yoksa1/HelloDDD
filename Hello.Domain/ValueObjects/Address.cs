@@ -1,4 +1,5 @@
 ﻿using Hello.Domain.Core.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Hello.Domain.ValueObjects
     /// <summary>
     /// 地址
     /// </summary>
-    //[Owned]
+    [Owned]
     public class Address : ValueObject<Address>
     {
         /// <summary>

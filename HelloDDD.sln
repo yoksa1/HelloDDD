@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.779
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Domain", "Hello.Domain\Hello.Domain.csproj", "{770F2B7A-D9E4-4862-8E6E-BDF398B5B7A9}"
 EndProject
@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Application", "Hello.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Domain.Test", "Hello.Domain.Test\Hello.Domain.Test.csproj", "{06C156AD-E5C7-4F16-9CA7-A695EE50397F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.Domain.Core", "Hello.Domain.Core\Hello.Domain.Core.csproj", "{A665F51C-7B9D-47E4-B472-D8C4D663B26B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Domain.Core", "Hello.Domain.Core\Hello.Domain.Core.csproj", "{A665F51C-7B9D-47E4-B472-D8C4D663B26B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{F4841A5B-19DA-4FFC-86F2-23393D9502A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDDD.Web", "HelloDDD.Web\HelloDDD.Web.csproj", "{EFACC13F-42B7-4E6E-9766-9EAC41249695}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{A665F51C-7B9D-47E4-B472-D8C4D663B26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A665F51C-7B9D-47E4-B472-D8C4D663B26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A665F51C-7B9D-47E4-B472-D8C4D663B26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFACC13F-42B7-4E6E-9766-9EAC41249695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFACC13F-42B7-4E6E-9766-9EAC41249695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFACC13F-42B7-4E6E-9766-9EAC41249695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFACC13F-42B7-4E6E-9766-9EAC41249695}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,8 @@ Global
 		{06F4D7D5-3410-43B7-A5A8-6332E78DBC32} = {188CFA44-1FB9-4AC2-8C32-433D2BF189CF}
 		{06C156AD-E5C7-4F16-9CA7-A695EE50397F} = {17318777-BA73-41C1-806B-C02A8C6D0820}
 		{A665F51C-7B9D-47E4-B472-D8C4D663B26B} = {17318777-BA73-41C1-806B-C02A8C6D0820}
+		{F4841A5B-19DA-4FFC-86F2-23393D9502A2} = {0B61B99A-1168-46C9-9735-47A5CBBDF919}
+		{EFACC13F-42B7-4E6E-9766-9EAC41249695} = {F4841A5B-19DA-4FFC-86F2-23393D9502A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D464AB0A-9120-4784-B063-6176B6D4B38A}
